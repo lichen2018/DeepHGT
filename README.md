@@ -1,8 +1,20 @@
 # DeepHGT
 This project contains codes and data for paper "Deep learning for HGT insertion sites recognition".
+## Installation
+### Requirements
+- Softwares
+  - Python(3.5+)
+- Python packages(3.5+)
+  - keras
+  - sklearn
+
+### Install
+Download and install
+```
+git clone --recursive https://github.com/lichen2018/DeepHGT.git
+```
+
 ## Discription of files
-#### deepHGT.py 
-a deep residual neural network for HGT insertion sites recognition.
 
 #### deepHGT.h5 
 the weight of DeepHGT.
@@ -15,3 +27,34 @@ the weight of DeepHGT.
 
 #### independent_test_label.txt
 label information for the independent test data.
+
+#### deepHGT_train.py 
+Training DeepHGT using file train_valid_test_data.txt for HGT insertion sites recognition.
+
+#### deepHGT_eval.py 
+Evaluating DeepHGT using file independent_test_data.txt.
+
+## DeepHGT usage
+### Train DeepHGT.
+```
+usage: python DeepHGT/deepHGT_train.py [options]
+```
+#### Option arguments
+  ```
+  -o FILE  Image of training process ["training.pdf"]
+  -w FILE  weight of DeepHGT ["weight.h5"]
+  ```
+### Evaluate DeepHGT.
+```
+usage: python DeepHGT/deepHGT_eval.py
+```
+
+## Example workflow
+### Training DeepHGT
+```
+python DeepHGT/deepHGT_train.py
+```
+### Evaluate DeepHGT
+```
+python DeepHGT/deepHGT_eval.py
+```
