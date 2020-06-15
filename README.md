@@ -1,5 +1,9 @@
 # DeepHGT
 This project contains codes and data for paper "Deep learning for HGT insertion sites recognition".
+## Table of Contents
+1. [Installation](#installation)
+2. [DeepHGT usage](#DeepHGT-usage)
+3. [Example workflow](#example-workflow)
 ## Installation
 ### Requirements
 - Softwares
