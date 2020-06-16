@@ -173,10 +173,10 @@ def main():
 
     history = model.fit_generator(
         data_gen(x_train, y_train, batch_size, True),
-        validation_data=data_gen(x_valid, y_valid, batch_size, False),
+        validation_data=data_gen(x_val, y_val, batch_size, False),
         epochs=600, verbose=1,
         steps_per_epoch=len(x_train) // batch_size,
-        validation_steps=len(x_valid) // batch_size)
+        validation_steps=len(x_val) // batch_size)
 
     plt.plot(history.history["loss"], label="loss")
     plt.plot(history.history["val_loss"], label="val_loss")
