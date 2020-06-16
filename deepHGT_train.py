@@ -12,10 +12,10 @@ import numpy as np
 from random import shuffle
 import pandas as pd
 import os
+import sys
 from glob import glob
 import fnmatch
 import argparse
-from scipy import misc
 from os.path import join
 
 from sklearn.model_selection import train_test_split
