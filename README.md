@@ -60,9 +60,9 @@ usage: python DeepHGT/deepHGT_eval.py
 ## Example workflow
 ### Training DeepHGT
 ```
-python DeepHGT/deepHGT_train.py
+python deepHGT_train.py
 ```
 ### Evaluate DeepHGT
 ```
-python DeepHGT/deepHGT_eval.py
+python deepHGT_eval.py
 ```
