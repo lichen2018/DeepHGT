@@ -11,6 +11,7 @@ This project contains codes and data for paper "Deep learning for HGT insertion 
 - Python packages(3.5+)
   - keras
   - sklearn
+  - numpy
 
 ### Install
 Download and install
@@ -20,6 +21,7 @@ cd DeepHGT
 wget -N https://media.githubusercontent.com/media/lichen2018/DeepHGT/master/train_validate_test_data.txt
 wget -N https://media.githubusercontent.com/media/lichen2018/DeepHGT/master/independent_test_data.txt
 wget -N https://media.githubusercontent.com/media/lichen2018/DeepHGT/master/independent_test_label.txt
+wget -N https://media.githubusercontent.com/media/lichen2018/DeepHGT/master/deepHGT.h5
 ```
 
 ## Discription of files
