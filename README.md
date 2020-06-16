@@ -20,7 +20,6 @@ git clone --recursive https://github.com/lichen2018/DeepHGT.git
 cd DeepHGT
 wget -N https://media.githubusercontent.com/media/lichen2018/DeepHGT/master/train_validate_test_data.txt
 wget -N https://media.githubusercontent.com/media/lichen2018/DeepHGT/master/independent_test_data.txt
-wget -N https://media.githubusercontent.com/media/lichen2018/DeepHGT/master/independent_test_label.txt
 wget -N https://media.githubusercontent.com/media/lichen2018/DeepHGT/master/deepHGT.h5
 ```
 
@@ -34,9 +33,6 @@ the weight of DeepHGT.
 
 #### independent_test_data.txt
 689,332 sequences for testing DeepHGT. Half of the data set are near HGT insertion sites and the remaining half are random sequences extracted from the reference genomes.
-
-#### independent_test_label.txt
-label information for the independent test data.
 
 #### deepHGT_train.py 
 Training DeepHGT using file train_valid_test_data.txt for HGT insertion sites recognition.
