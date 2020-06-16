@@ -16,6 +16,9 @@ This project contains codes and data for paper "Deep learning for HGT insertion 
 Download and install
 ```
 git clone --recursive https://github.com/lichen2018/DeepHGT.git
+cd DeepHGT
+wget -N https://media.githubusercontent.com/media/lichen2018/DeepHGT/master/train_validate_test_data.txt
+
 ```
 
 ## Discription of files
