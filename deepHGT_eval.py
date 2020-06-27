@@ -32,7 +32,7 @@ from keras.applications.nasnet import  preprocess_input
 from keras.optimizers import Adam, SGD
 import math
 
-
+    
 def loadTrainSeq(file_name):
     fi = open(file_name, "r")
     sample_seq_list = []
@@ -213,6 +213,8 @@ def main():
     fo=open('auc_ap.txt', 'w')
     fo.write("AUC:"+str(auc)+'\n')
     fo.write("AP:"+str(ap)+'\n')
+    print("AUC:"+str(auc)+'\n')
+    print("AP:"+str(ap)+'\n')
     fo.close()
 
 
