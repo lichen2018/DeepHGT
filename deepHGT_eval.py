@@ -186,7 +186,7 @@ def get_classification_model(train_seq_length):
 
 
 def main():
-    file_name = "independent_test_data.txt"
+    file_name = args["i"]
     sample_x, sample_y = loadTrainSeq(file_name)
     model = get_classification_model(train_length)
     h5_path = "deepHGT.h5"
@@ -224,6 +224,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Evaluate DeepHGT.", add_help=False, usage="%(prog)s [-h]", formatter_class=argparse.ArgumentDefaultsHelpFormatter)
     required = parser.add_argument_group("required arguments")
     optional = parser.add_argument_group("optional arguments")
+    required.add_argument("-i", type=str, default=".", help="<str> independent test data set of DeepHGT.", metavar="\b")
     optional.add_argument("-h", "--help", action="help")
     args = vars(parser.parse_args())
     batch_size = 120
