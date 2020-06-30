@@ -22,10 +22,10 @@ cd DeepHGT
 ### Download data sets
 The two data sets including train_valid_test_data.txt and independent_test_data.txt should be downloaded from google drive.
 #### train_valid_test_data.txt 
-1,556,694 sequences for training (90%), validation (10%), and testing (10%) DeepHGT. Half of the data set are near HGT insertion sites and the remaining half are random sequences extracted from the reference genomes. The shared link is https://drive.google.com/file/d/1Ja2w5TjfCcQyuMl2N73jwQP_-97n3aEC/view?usp=sharing
+1,556,694 sequences for training (90%), validation (10%), and testing (10%) DeepHGT. Half of the data set are near HGT insertion sites and the remaining half are random sequences extracted from the reference genomes. This file could be downloaded from the shared link https://drive.google.com/file/d/1Ja2w5TjfCcQyuMl2N73jwQP_-97n3aEC/view?usp=sharing
 
 #### independent_test_data.txt
-689,332 sequences for testing DeepHGT. Half of the data set are near HGT insertion sites and the remaining half are random sequences extracted from the reference genomes. The shared link is https://drive.google.com/file/d/18K6Xx2mUb4yCkzA5-xW2CWHoWwBknhy4/view?usp=sharing
+689,332 sequences for testing DeepHGT. Half of the data set are near HGT insertion sites and the remaining half are random sequences extracted from the reference genomes. This file could be downloaded from the shared link https://drive.google.com/file/d/18K6Xx2mUb4yCkzA5-xW2CWHoWwBknhy4/view?usp=sharing
 
 ## Discription of files
 
