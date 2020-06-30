@@ -153,7 +153,7 @@ def get_classification_model(train_seq_length):
 
 
 def main():
-    file_name = 'train_validate_test_data.txt'
+    file_name = args["i"]
 
     sample_x, sample_y_list = loadTrainSeq(file_name)
     lb = preprocessing.LabelBinarizer()
@@ -186,6 +186,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Train and validate DeepHGT.", add_help=False, usage="%(prog)s [-h] -r genome_dir -id sample_id.txt", formatter_class=argparse.ArgumentDefaultsHelpFormatter)
     required = parser.add_argument_group("required arguments")
     optional = parser.add_argument_group("optional arguments")
+    required.add_argument("-i", type=str, default=".", help="<str> training data set of DeepHGT.", metavar="\b")
     optional.add_argument("-o", type=str, default="training.pdf", help="<str> Image of training process", metavar="\b")
     optional.add_argument("-w", type=str, default="weight.h5", help="<str> weight of DeepHGT.", metavar="\b")
     optional.add_argument("-h", "--help", action="help")
