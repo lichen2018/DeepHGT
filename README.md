@@ -42,7 +42,7 @@ The two data sets including train_valid_test_data.txt and independent_test_data.
 ## DeepHGT usage
 ### Train DeepHGT.
 ```
-usage: python DeepHGT/deepHGT_train.py [options]
+usage: python deepHGT_train.py [options]
 ```
 #### Required arguments  
   ```
@@ -55,7 +55,7 @@ usage: python DeepHGT/deepHGT_train.py [options]
   ```
 ### Evaluate DeepHGT.
 ```
-usage: python DeepHGT/deepHGT_eval.py [options]
+usage: python deepHGT_eval.py [options]
 ```
 #### Required arguments  
   ```
