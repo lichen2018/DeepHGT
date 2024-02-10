@@ -30,6 +30,9 @@ Training DeepHGT using file train_valid_test_data.txt for HGT insertion sites re
 #### deepHGT_eval.py 
 Evaluating DeepHGT using file independent_test_data.txt.
 
+#### deepHGT_pred.py 
+Predicting HGT site using DeepHGT for DNA sequences in a given txt file.
+
 ### Download data sets
 The two data sets including train_valid_test_data.txt and independent_test_data.txt should be downloaded from google drive.
 
@@ -62,6 +65,17 @@ usage: python deepHGT_eval.py [options]
   -i STR  Path to file independent_test_data.txt
   ```
 
+### Predicting HGT sites.
+```
+usage: python deepHGT_pred.py [options]
+```
+#### Required arguments  
+  ```
+  -i FILE  a txt file containing DNA sequences. The length of DNA sequence in each row is 100bp.  
+  -w FILE  weight of DeepHGT ["DeepHGT.h5"]
+  -o FILE  prediction result
+  ```
+
 ## Example workflow
 ### Training DeepHGT
 ```
@@ -70,4 +84,8 @@ python deepHGT_train.py -i Path to train_valid_test_data.txt
 ### Evaluate DeepHGT
 ```
 python deepHGT_eval.py -i Path to independent_test_data.txt
+```
+### Predict HGT sites
+```
+python deepHGT_pred.py -i seq.txt -w DeepHGT.h5 -o prediction.txt
 ```
